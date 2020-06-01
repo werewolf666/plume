@@ -18,6 +18,8 @@ trait ContextTrait{
         'plume.module.prefix' => '',
         'plume.method.before' => 'beforeDispatch',
         'plume.method.before.result' => 'nothing',
+        //default方法的返回结果集
+        'plume.method.default.result' => 'nothing',
         'plume.method.after' => 'afterDispatch',
         'plume.method.after.result' => 'nothing',
         'plume.msg.error.permission' => 'Permission is not found',

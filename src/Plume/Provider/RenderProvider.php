@@ -33,6 +33,7 @@ class RenderProvider extends Provider{
         $this->plume('plume.method.before.result', $beforResult);
         $log->debug('ActionbeforResult', $beforResult);
         $result = $method->invoke($instance);
+        $this->plume('plume.method.default.result', $result);
         $log->debug('ActionResult', $result);
         $afterDispatch = $class->getMethod($this->plume('plume.method.after'));
         $afterResult = $afterDispatch->invoke($instance);
